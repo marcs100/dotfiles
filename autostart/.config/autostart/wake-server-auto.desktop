@@ -1,0 +1,6 @@
+[Desktop Entry]
+Exec=/home/marc/source/scripts/wake-server-auto
+Icon=application-x-shellscript
+Name=wake-server-auto
+Type=Application
+X-KDE-AutostartScript=true

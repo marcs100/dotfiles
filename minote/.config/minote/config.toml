@@ -1,0 +1,17 @@
+Title = "Minote"
+
+[settings]
+  Database = "/home/marc/sync/minote/minote.db"
+  recent_notes_limit = 50
+  note_width = 500.0
+  note_height = 300.0
+  initial_view = "pinned"
+  initial_layout = "grid"
+  grid_max_pages = 50
+  theme_variant = "dark"
+  dark_colour_note = "#2f2f2f"
+  light_colour_note = "#e2e2e2"
+  dark_colour_bg = "#1e1e1e"
+  light_colour_bg = "#efefef"
+  dark_colour_ct_bg = "#1e1e1e"
+  light_colour_ct_bg = "#efefef"

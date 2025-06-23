@@ -1,0 +1,22 @@
+layout {
+    cwd "/home/marc/source/minote"
+	pane split_direction="vertical" {
+        pane stacked=true{
+            pane{
+                command "helix"
+                args "./minote.go" "./ui/main_window.go"
+            }
+
+            pane{
+                command "lazygit"
+            }
+
+        }
+
+        pane split_direction="horizontal" size="30%" {
+            name "terminal"
+            pane
+        }
+    }
+
+}

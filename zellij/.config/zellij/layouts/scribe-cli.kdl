@@ -1,0 +1,20 @@
+layout {
+    cwd "/home/marc/source/scribe-cli"
+	pane split_direction="vertical" {
+        pane { 
+            command "/home/marc/source/scribe-cli/open-scribe-cli.sh"
+                
+        }
+        
+        pane split_direction="horizontal" size="40%" {
+            
+            pane stacked=true{
+                pane command="lazygit"
+
+                pane
+
+            }
+        }
+    }
+
+}

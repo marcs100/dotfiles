@@ -1,0 +1,17 @@
+theme = "catppuccin_macchiato"
+
+[editor]
+bufferline = "multiple"
+mouse = true
+color-modes = true
+
+[editor.indent-guides]
+render = true
+character = "⸽" # Some characters that work well: "╎" "▏", "┆", "┊", "⸽"
+skip-levels = 1
+
+[keys.normal]
+C-right = ":bn" #move to next buffer
+C-left = ":bp"  #move to previous buffer
+C-g = [":new", ":insert-output lazygit",":set mouse false", ":set mouse true", ":buffer-close!", ":redraw", ":reload-all"] #git integration
+#F4 = [":new", ":insert-output konsole", ":buffer-close!", ":redraw"]
