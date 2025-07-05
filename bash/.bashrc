@@ -23,7 +23,7 @@ alias dev-min='minote-dev.sh'
 #alias AI='konsole --profile container --new-tab -e distrobox-enter AI'
 #PS1='[\u@\h \W]\$
 #PS1='\e[0;31m$CONTAINER_ID\e[0m\033[0;32m \u@\h \W $\e[0m\n> '
-PS1='\e[0;31m$CONTAINER_ID\e[0m\033[0;32m \u@\h \W \e[0m\e[0;35m$(__git_ps1)\e[0m\n>'
+PS1='\e[0;31m$CONTAINER_ID\e[0m\033[0;32m \u@\h \W \e[0m\e[0;35m$(__git_ps1)\e[0m\n> '
 # Use bash-completion, if available
 [[ $PS1 && -f /usr/share/bash-completion/bash_completion ]] && \
     . /usr/share/bash-completion/bash_completion

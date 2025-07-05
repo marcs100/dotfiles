@@ -43,3 +43,7 @@
 # resize-overlay-duration = 4s 200ms
 theme = SpaceGray
 background-opacity = 0.95
+
+#My key bindings
+keybind = ctrl+shift+0=new_split:right
+keybind = ctrl+shift+9=new_split:down
