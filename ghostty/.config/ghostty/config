@@ -4,7 +4,7 @@ theme = SpaceGray
 background-opacity = 0.95
 confirm-close-surface = false
 font-size = 13
-cusror-style = bar
+cursor-style = bar
 
 #My key bindings
 keybind = ctrl+shift+0=new_split:right
