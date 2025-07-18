@@ -3,7 +3,8 @@
 theme = SpaceGray
 background-opacity = 0.95
 confirm-close-surface = false
-font-size = 13
+font-family = Source Code Pro Medium
+font-size = 15
 cursor-style = bar
 
 #My key bindings
