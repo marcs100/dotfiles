@@ -35,13 +35,14 @@ alias serv='ssh marc@192.168.1.200'
 #alias tw='konsole --profile container --new-tab -e distrobox-enter tw'
 alias arch='distrobox enter arch-dev'
 alias tw='distrobox enter tw'
-alias dev-min='cd ~/source/minote && distrobox enter arch-dev -- hx ~/source/minote/*.go ~/source/minote/*/*.go -w ~/source/minote'
+alias dev-min='cd ~/source/minote && distrobox enter arch-dev -- helix ~/source/minote/*.go ~/source/minote/ui.main_window,go  -w ~/source/minote'
 alias lg='lazygit'
 alias gc='helix ~/.config/ghostty/config'
 
 setopt prompt_subst #this is needed else vcs_info does not parse (not sure why?)
 precmd () { vcs_info } # always load before displaying the prompt (used for git)
-zstyle ':vcs_info:*' formats ' (%F{magenta}%b%f)' # just show (branch)
+zstyle ':vcs_info:*' formats '%F{magenta}[%b]%f' # just show (branch)
 #zstyle ':vcs_info:*' formats ' %s(%F{red}%b%f)' # git(main)
 NEWLINE=$'\n'
-PS1='%F{red}$CONTAINER_ID%f %F{green}%n@%m %d%f $vcs_info_msg_0_ ${NEWLINE}> '
+PS1='%F{red}$CONTAINER_ID%f %F{green}%n@%m%f %d $vcs_info_msg_0_ ${NEWLINE}> '
+
