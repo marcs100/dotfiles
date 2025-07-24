@@ -1,7 +1,7 @@
 #
 # ~/.bashrc
 #
-
+source /usr/share/git/git-prompt.sh
 export PATH=${PATH}:~/source/scripts:~/.local/bin:
 export EDITOR=helix
 

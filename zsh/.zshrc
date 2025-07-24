@@ -35,7 +35,7 @@ alias serv='ssh marc@192.168.1.200'
 #alias tw='konsole --profile container --new-tab -e distrobox-enter tw'
 alias arch='distrobox enter arch-dev'
 alias tw='distrobox enter tw'
-alias dev-min='cd ~/source/minote && distrobox enter arch-dev -- helix ~/source/minote/*.go ~/source/minote/ui.main_window,go  -w ~/source/minote'
+alias dev-min='minote-dev.sh'
 alias lg='lazygit'
 alias gc='helix ~/.config/ghostty/config'
 
