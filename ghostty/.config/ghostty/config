@@ -1,7 +1,7 @@
 # This is the configuration file for Ghostty.
 
-#theme = SpaceGray
-theme=NvimDark
+theme = SpaceGray
+#theme=NvimDark
 background-opacity = 0.95
 confirm-close-surface = false
 font-family = Monpspace
