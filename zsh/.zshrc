@@ -30,7 +30,7 @@ alias ll='ls -al --color=auto'
 alias grep='grep --color=auto'
 alias hx='helix'
 #alias serv='konsole --profile server --new-tab -e ssh marc@192.168.1.200'
-alias serv='kitten ssh marc@192.168.1.200'
+alias serv='ssh marc@192.168.1.200'
 #alias arch='konsole --profile container --new-tab -e distrobox-enter arch-dev'
 #alias tw='konsole --profile container --new-tab -e distrobox-enter tw'
 alias arch='distrobox enter arch-dev'
@@ -41,7 +41,7 @@ alias gc='helix ~/.config/ghostty/config'
 
 setopt prompt_subst #this is needed else vcs_info does not parse (not sure why?)
 precmd () { vcs_info } # always load before displaying the prompt (used for git)
-zstyle ':vcs_info:*' formats '%F{magenta}[%b]%f' # just show (branch)
+zstyle ':vcs_info:*' formats '%F{magenta}%b%f' # just show (branch)
 #zstyle ':vcs_info:*' formats ' %s(%F{red}%b%f)' # git(main)
 NEWLINE=$'\n'
 PS1='%F{red}$CONTAINER_ID%f %F{green}%n@%m%f %d $vcs_info_msg_0_ ${NEWLINE}> '

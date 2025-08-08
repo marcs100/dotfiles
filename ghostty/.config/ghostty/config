@@ -3,14 +3,15 @@
 theme = SpaceGray
 #theme=NvimDark
 background-opacity = 0.95
+#background-blur = true # not working!
 confirm-close-surface = false
-font-family = Monpspace
+font-family = JetBrainsMono Nerd Font
 font-size = 13
 cursor-style = bar
 
 #My key bindings
-keybind = ctrl+shift+0=new_split:right
-keybind = ctrl+shift+9=new_split:down
+keybind = ctrl+shift+0=new_split:down
+keybind = ctrl+shift+9=new_split:right
 
 # This template file has been automatically created at the following
 # path since Ghostty couldn't find any existing config files on your system:
