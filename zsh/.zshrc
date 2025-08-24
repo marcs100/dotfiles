@@ -25,22 +25,31 @@ export EDITOR=helix
 autoload -Uz vcs_info # enable vcs_info
 autoload -U colors && colors
 
+#Use this for a modular config
+# User specific aliases and functions
+#if [ -d ~/.zshrc.d ]; then
+#    for rc in ~/.zshrc.d/*; do
+#        if [ -f "$rc" ]; then
+#            . "$rc"
+#        fi
+#    done
+#fi
+#unset rc
+
 alias ls='eza'
 alias ll='eza -al'
-# alias ls='ls --color=auto'
-# alias ll='ls -al --color=auto'
 alias grep='grep --color=auto'
 alias hx='helix'
-#alias serv='konsole --profile server --new-tab -e ssh marc@192.168.1.200'
 alias serv='ssh marc@192.168.1.200'
-#alias arch='konsole --profile container --new-tab -e distrobox-enter arch-dev'
-#alias tw='konsole --profile container --new-tab -e distrobox-enter tw'
 alias arch='distrobox enter arch-dev'
-alias tw='distrobox enter tw'
-alias dev-min='minote-dev.sh'
+alias cli='distrobox enter cli'
+alias dev-min='kitty --title "Helix - Minote Development" --session ~/.config/kitty/minote-session.conf'
 alias lg='lazygit'
 alias cg='helix ~/.config/ghostty/config'
 alias cz='helix ~/.zshrc'
+alias ck='helix ~/.config/kitty/kitty.conf'
+alias host='distrobox-host-exec'
+alias pl='tail -n 100 /var/log/pacman.log'
 
 setopt prompt_subst #this is needed else vcs_info does not parse (not sure why?)
 precmd () { vcs_info } # always load before displaying the prompt (used for git)
