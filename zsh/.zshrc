@@ -40,7 +40,7 @@ alias ls='eza'
 alias ll='eza -al'
 alias grep='grep --color=auto'
 alias hx='helix'
-alias serv='ssh marc@192.168.1.200'
+alias serv='kitten ssh marc@192.168.1.200'
 alias arch='distrobox enter arch-dev'
 alias cli='distrobox enter cli'
 alias dev-min='kitty --title "Helix - Minote Development" --session ~/.config/kitty/minote-session.conf'
@@ -49,7 +49,7 @@ alias cg='helix ~/.config/ghostty/config'
 alias cz='helix ~/.zshrc'
 alias ck='helix ~/.config/kitty/kitty.conf'
 alias host='distrobox-host-exec'
-alias pl='tail -n 100 /var/log/pacman.log'
+alias pl='tail -n 500 /var/log/pacman.log'
 
 setopt prompt_subst #this is needed else vcs_info does not parse (not sure why?)
 precmd () { vcs_info } # always load before displaying the prompt (used for git)
