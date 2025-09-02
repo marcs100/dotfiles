@@ -48,6 +48,7 @@ alias lg='lazygit'
 alias cg='helix ~/.config/ghostty/config'
 alias cz='helix ~/.zshrc'
 alias ck='helix ~/.config/kitty/kitty.conf'
+alias ch='helix ~/.config/hypr/hyprland.conf ~/.config/waybar/config.jsonc ~/.config/waybar/style.css ~/.config/nwg-dock-hyprland/style.css'
 alias host='distrobox-host-exec'
 alias pl='tail -n 500 /var/log/pacman.log'
 
