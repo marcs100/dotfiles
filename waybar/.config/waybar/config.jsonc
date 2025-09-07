@@ -1,6 +1,6 @@
 {
     "layer": "top",
-    "output": "DP-1", //I only want output to my main monitor
+    "output": "HDMI-A-2", //I only want output to my main monitor
     "position": "top",
     "height": 40,
     "spacing": 4,
@@ -12,6 +12,7 @@
     //"modules-left": ["hyprland/workspaces", "hyprland/window"],
     "modules-center": ["clock#simpleclock"],
     "modules-right": [
+        "network",
         "cpu",
         "memory",
         "pulseaudio",
@@ -28,23 +29,30 @@
         "exec": "spotifatius monitor",
     },*/
 
-    // "network":{
-    //     "interface": "eno1",
-    //     "format": "󰈀 {ifname} {ipaddr} {bandwidthDownBytes} MBps",  
-    //     "interval": 1,
-    // },
-    
-    "hyprland/workspaces": {
+    "network":{
+        "interface": "enp9s0",
+        // "format": "󰈀 {ifname} {ipaddr} {bandwidthDownBytes}",  
+        "format-ethernet": "󰈀 {ifname} down: {bandwidthDownBytes}  up: {bandwidthUpBytes}", 
+        "interval": 1,
+    },
+      "niri/workspaces": {
         "on-click": "activate",
-        "format": "{name}",
-        "all-outputs": true,
-        "disable-scroll": false,
-        "active-only": false,
-    },
-    "persistent-workspaces":{
-        "*": 8  
-    },
-    "tray": {
+        "format": "{icon}",
+        "format-icons": {
+          "default": "",
+          "1": "1",
+          "2": "2",
+          "3": "3",
+          "4": "4",
+          "5": "5",
+          "6": "6",
+          "7": "7",
+          "8": "8",
+          "9": "9",
+          "active": ""
+        },
+      },
+        "tray": {
         "show-passive-items": true,
         "spacing": 10,
     },

@@ -28,61 +28,73 @@ window#waybar.hidden {
     opacity: 0.5
 }
 
-#workspaces {
-  background: rgba(0, 0, 0, 0.5);
-  border-radius: 10px;
-  margin: 6px 5px;
-  padding: 0px 6px;
-}
+/* #workspaces { */
+  /* background: rgba(0, 0, 0, 0.5); */
+  /* border-radius: 10px; */
+  /* margin: 6px 5px; */
+  /* padding: 0px 6px; */
+/* } */
+
+/* #workspaces button { */
+  /* color: #B5E8E0; */
+  /* background: transparent; */
+  /* padding: 4px 4px; */
+  /* transition: color 0.3s ease, text-shadow 0.3s ease, transform 0.3s ease; */
+/* } */
+
+/* #workspaces button.occupied { */
+  /* color: #A6E3A1; */
+/* } */
+
+/* #workspaces button.active { */
+  /* color: #89B4FA; */
+  /* text-shadow: 0 0 4px #ABE9B3; */
+/* } */
+
+/* #workspaces button:hover { */
+  /* color: #89B4FA; */
+/* } */
+
+/* #workspaces button.active:hover {} */
 
 #workspaces button {
-  color: #B5E8E0;
-  background: transparent;
-  padding: 4px 4px;
-  transition: color 0.3s ease, text-shadow 0.3s ease, transform 0.3s ease;
+  all: initial;
+  padding: 0 6px;
+  margin: 0 1.5px;
+  min-width: 9px;
 }
 
-#workspaces button.occupied {
-  color: #A6E3A1;
+#workspaces button.empty {
+  opacity: 0.5;
 }
 
-#workspaces button.active {
-  color: #89B4FA;
-  text-shadow: 0 0 4px #ABE9B3;
-}
-
-#workspaces button:hover {
-  color: #89B4FA;
-}
-
-#workspaces button.active:hover {}
 
 
-#clock,
-#pulseaudio,
-#custom-logo,
-#cpu,
-#network,
-#memory{
-min-height: 0;
-padding: 2px 10px;
-border-radius: 8px;
-margin: 4px 4px;
-background-color: #2a2826;
-}
+/* #clock, */
+/* #pulseaudio, */
+/* #custom-logo, */
+/* #cpu, */
+/* #network, */
+/* #memory{ */
+/* min-height: 0; */
+/* padding: 2px 10px; */
+/* border-radius: 8px; */
+/* margin: 4px 4px; */
+/* background-color: #2a2826; */
+/* } */
 
 #custom-power,
 #window,
 #tray,
 #cpu,
 #memory,
-#network
+#network,
 #date,
 #clock,
 #pulseaudio{
 min-height: 0;
 padding: 2px 10px;
-border-radius: 8px;
+border-radius: 6px;
 margin: 4px 4px;
 color: #fff4fb;
 background-color: #2a2826;
