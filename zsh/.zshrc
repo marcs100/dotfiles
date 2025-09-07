@@ -36,6 +36,8 @@ autoload -U colors && colors
 #fi
 #unset rc
 
+wal -R > /dev/null
+
 alias ls='eza'
 alias ll='eza -al'
 alias grep='grep --color=auto'
