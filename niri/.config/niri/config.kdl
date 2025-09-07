@@ -294,7 +294,7 @@ layout {
 spawn-at-startup "/home/marc/source/scripts/set_wallpaper.sh"
 spawn-at-startup "waybar"
 //spawn-at-startup "nextcloud"
-spawn-at0startup "mako"
+spawn-at-startup "mako"
 spawn-at-startup "swayidle" "-w" "timeout" "300" "niri msg action power-off-monitors" "timeout" "600" "swaylock -f" "before-sleep" "swaylock -f"
 //spawn-at-startup "/usr/lib/polkit-kde-authentication-agent-1" "&" // Polkit
 
@@ -392,10 +392,11 @@ binds {
     //My keybindings
     //browser="firefox";
     Mod+b {spawn "firefox";}
+    Mod+Tab {spawn "rofi" "-show" "window";}
 
     // Suggested binds for running programs: terminal, app launcher, screen locker.
     Mod+Return hotkey-overlay-title="Open a Terminal: kitty" { spawn "kitty"; }
-    Mod+Space hotkey-overlay-title="Run an Application: walker" { spawn "walker"; }
+    Mod+Space hotkey-overlay-title="Run an Application: rofi" { spawn "rofi" "-show" "drun"; }
     Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
 
     // Use spawn-sh to run a shell command. Do this if you need pipes, multiple commands, etc.

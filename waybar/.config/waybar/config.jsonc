@@ -1,6 +1,6 @@
 {
     "layer": "top",
-    "output": "HDMI-A-2", //I only want output to my main monitor
+    "output": "DP-1", //I only want output to my main monitor
     "position": "top",
     "height": 40,
     "spacing": 4,
@@ -30,7 +30,7 @@
     },*/
 
     "network":{
-        "interface": "enp9s0",
+        "interface": "eno1",
         // "format": "󰈀 {ifname} {ipaddr} {bandwidthDownBytes}",  
         "format-ethernet": "󰈀 {ifname} down: {bandwidthDownBytes}  up: {bandwidthUpBytes}", 
         "interval": 1,
