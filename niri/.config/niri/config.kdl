@@ -206,7 +206,7 @@ layout {
         // You can use any CSS linear-gradient tool on the web to set these up.
         // Changing the color space is also supported, check the wiki for more info.
         //
-        active-gradient from="#80c8ff" to="#c7ff7f" angle=45
+        //active-gradient from="#80c8ff" to="#c7ff7f" angle=45
 
         // You can also color the gradient relative to the entire view
         // of the workspace, rather than relative to just the window itself.
@@ -293,6 +293,9 @@ layout {
 // This line starts waybar, a commonly used bar for Wayland compositors.
 spawn-at-startup "/home/marc/source/scripts/set_wallpaper.sh"
 spawn-at-startup "waybar"
+//spawn-at-startup "nextcloud"
+spawn-at0startup "mako"
+spawn-at-startup "swayidle" "-w" "timeout" "300" "niri msg action power-off-monitors" "timeout" "600" "swaylock -f" "before-sleep" "swaylock -f"
 //spawn-at-startup "/usr/lib/polkit-kde-authentication-agent-1" "&" // Polkit
 
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
