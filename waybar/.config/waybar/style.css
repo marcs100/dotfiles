@@ -91,7 +91,9 @@ window#waybar.hidden {
 #network,
 #date,
 #clock,
-#pulseaudio{
+#pulseaudio,
+#custom-logo{
+  
 min-height: 0;
 padding: 2px 10px;
 border-radius: 6px;
