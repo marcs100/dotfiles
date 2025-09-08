@@ -295,7 +295,8 @@ spawn-at-startup "/home/marc/source/scripts/set_wallpaper.sh"
 spawn-at-startup "waybar"
 //spawn-at-startup "nextcloud"
 spawn-at-startup "mako"
-spawn-at-startup "swayidle" "-w" "timeout" "300" "niri msg action power-off-monitors" "timeout" "600" "swaylock -f" "before-sleep" "swaylock -f"
+spawn-at-startup "~/source/scripts/niri_lock.sh"
+//spawn-at-startup "swayidle" "-w" "timeout" "300" "niri msg action power-off-monitors" "timeout" "600" "swaylock -f" "before-sleep" "swaylock -f"
 //spawn-at-startup "/usr/lib/polkit-kde-authentication-agent-1" "&" // Polkit
 
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
