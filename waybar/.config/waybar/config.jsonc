@@ -89,7 +89,7 @@
         "on-click": "pavucontrol",
     },
     "custom/logo": {
-        "format": "",
+        "format": "󰣇",
         "tooltip": false,
         "on-click": "rofi -show drun"
     },

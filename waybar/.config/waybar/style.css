@@ -91,9 +91,7 @@ window#waybar.hidden {
 #network,
 #date,
 #clock,
-#pulseaudio,
-#custom-logo{
-  
+#pulseaudio{
 min-height: 0;
 padding: 2px 10px;
 border-radius: 6px;
@@ -102,6 +100,16 @@ color: #fff4fb;
 background-color: #2a2826;
 opacity: 0.5;
 }
+
+#custom-logo{
+  min-height: 0;
+  padding: 0px 12px;
+  border-radius: 6px;
+  margin: 4px 4px;
+  color: #fff4fb;
+  background-color: #2a2826;
+}
+
 
 #custom-sep {
 padding: 0px;
@@ -120,14 +128,23 @@ color: #a6e3a1;
 color: #a6adc8;
 }
 
-#custom-logo {
-color: #89b4fa;
+#custom-logo{
+color:  #89b4fa;
+}
+
+#custom-logo:hover{
+  background-color: #006ea1;
 }
 
 #custom-power {
 color: #f38ba8;
 padding-right: 5px;
 font-size: 14px;
+}
+
+#custom-power:hover{
+  color: #1c1c1c;
+  background-color: #ae545e;
 }
 
 @keyframes blink {
