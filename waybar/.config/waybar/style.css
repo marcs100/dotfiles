@@ -84,6 +84,7 @@ window#waybar.hidden {
 /* } */
 
 #custom-power,
+#custom-lock,
 #window,
 #tray,
 #cpu,
@@ -145,6 +146,17 @@ font-size: 14px;
 #custom-power:hover{
   color: #1c1c1c;
   background-color: #ae545e;
+}
+
+#custom-lock {
+color: #67cc95;
+padding-right: 5px;
+font-size: 14px;
+}
+
+#custom-lock:hover{
+  color: #262d29;
+  background-color: #67cc95;
 }
 
 @keyframes blink {

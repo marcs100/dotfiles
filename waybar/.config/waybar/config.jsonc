@@ -18,6 +18,8 @@
         "pulseaudio",
         "clock",
         "tray",
+        "custom/sep",
+        "custom/lock",
         "custom/power",
     ],
 
@@ -102,5 +104,11 @@
         "tooltip": false,
         "on-click": "nwg-bar -p centre -i 64",
         "format": "⏻ ",
+    },
+
+    "custom/lock": {
+        "tooltip": false,
+        "on-click": "swaylock",
+        "format": " ",
     },
 }
