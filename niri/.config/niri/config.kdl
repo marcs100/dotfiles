@@ -292,6 +292,7 @@ layout {
 
 // This line starts waybar, a commonly used bar for Wayland compositors.
 spawn-at-startup "/home/marc/source/scripts/set_wallpaper.sh"
+spawn-at-startup "/home/marc/source/scripts/wake-server-auto"
 spawn-at-startup "waybar"
 //spawn-at-startup "nextcloud"
 spawn-at-startup "mako"

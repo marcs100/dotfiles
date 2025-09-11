@@ -1,0 +1,17 @@
+[Desktop Entry]
+Name=Arch-dev
+GenericName=Terminal entering Arch-dev
+Comment=Terminal entering Arch-dev
+Categories=Distrobox;System;Utility
+Exec=/usr/bin/distrobox enter  arch-dev
+Icon=/home/marc/.local/share/icons/distrobox/arch.png
+Keywords=distrobox;
+NoDisplay=false
+Terminal=true
+TryExec=/usr/bin/distrobox
+Type=Application
+Actions=Remove;
+
+[Desktop Action Remove]
+Name=Remove Arch-dev from system
+Exec=/usr/bin/distrobox rm  arch-dev

@@ -177,4 +177,14 @@ configuration {
 
 //@theme "/home/marc/.local/share/rofi/themes/marcs-theme.rasi"
 
-@theme "/home/marc/.local/share/rofi/themes/marcs-theme.rasi"
+//@theme "/home/marc/.local/share/rofi/themes/marcs-theme.rasi"
+
+//@theme "/home/marc/.local/share/rofi/themes/marcs-theme_wal.rasi"
+
+//@theme "/home/marc/.local/share/rofi/themes/marcs-theme.rasi"
+
+//@theme "/home/marc/.local/share/rofi/themes/marcs-theme_wal.rasi"
+
+//@theme "/home/marc/.local/share/rofi/themes/marcs-theme_wal.rasi"
+
+@theme "/home/marc/.local/share/rofi/themes/marcs-theme_wal.rasi"
