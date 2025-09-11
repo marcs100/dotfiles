@@ -8,8 +8,12 @@
     "gtk-layer-shell": true,
     "passthrough": false,
     "fixed-center": true,
-    "modules-left": ["custom/logo","niri/workspaces", "niri/window"],
-    //"modules-left": ["hyprland/workspaces", "hyprland/window"],
+    "modules-left": [
+        "custom/logo",
+        "custom/sep",
+        "niri/workspaces",
+        "niri/window"
+    ],
     "modules-center": ["clock#simpleclock"],
     "modules-right": [
         "network",
@@ -38,22 +42,23 @@
         "format-ethernet": "󰈀 {ifname} down: {bandwidthDownBytes}  up: {bandwidthUpBytes}", 
         "interval": 1,
     },
-      "niri/workspaces": {
+    "niri/workspaces": {
         "on-click": "activate",
-        "format": "{icon}",
-        "format-icons": {
-          "default": "",
-          "1": "1",
-          "2": "2",
-          "3": "3",
-          "4": "4",
-          "5": "5",
-          "6": "6",
-          "7": "7",
-          "8": "8",
-          "9": "9",
-          "active": ""
-        },
+        "format": "{value}"
+        // "format": "{icon}",
+        // "format-icons": {
+        //   "default": "󱓼",
+          // "1": "1",
+          // "2": "2",
+          // "3": "3",
+          // "4": "4",
+          // "5": "5",
+          // "6": "6",
+          // "7": "7",
+          // "8": "8",
+          // "9": "9",
+          // "active": "󱓻"
+       //},
       },
         "tray": {
         "show-passive-items": true,
