@@ -294,6 +294,7 @@ layout {
 spawn-at-startup "/home/marc/source/scripts/set_wallpaper.sh"
 spawn-at-startup "/home/marc/source/scripts/wake-server-auto"
 spawn-at-startup "waybar"
+//spawn-at-startup "~/source/scripts/waybar-DP2.sh"
 //spawn-at-startup "nextcloud"
 spawn-at-startup "mako"
 spawn-at-startup "~/source/scripts/niri_lock.sh"
@@ -396,6 +397,7 @@ binds {
     //browser="firefox";
     Mod+b {spawn "firefox";}
     Mod+Tab {spawn "rofi" "-show" "window";}
+    Mod+S {spawn "python" "/home/marc/source/scripts/rofi-dmenu.py";}
     Mod+y {spawn "kitty" "yazi";}
     Mod+g {spawn "nautilus";}
 
