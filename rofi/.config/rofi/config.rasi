@@ -187,4 +187,8 @@ configuration {
 
 //@theme "/home/marc/.local/share/rofi/themes/marcs-theme_wal.rasi"
 
+//@theme "/home/marc/.local/share/rofi/themes/marcs-theme_wal.rasi"
+
+//@theme "/usr/share/rofi/themes/fullscreen-preview.rasi"
+
 @theme "/home/marc/.local/share/rofi/themes/marcs-theme_wal.rasi"

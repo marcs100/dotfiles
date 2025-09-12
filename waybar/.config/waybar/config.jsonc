@@ -12,35 +12,37 @@
         "custom/logo",
         "custom/sep",
         "niri/workspaces",
-        "niri/window"
+        //"niri/window"
+        "wlr/taskbar"
     ],
-    "modules-center": ["clock#simpleclock"],
+    "modules-center": [],
     "modules-right": [
         "network",
         "cpu",
         "memory",
+        "disk",
         "pulseaudio",
         "clock",
+        "clock#simpleclock",
         "tray",
         "custom/sep",
         "custom/lock",
         "custom/power",
     ],
-
-    /*"custom/spotify": {
-        "format": "{}",
-        "return-type": "json",
-        "on-click": "playerctl -p spotify play-pause",
-        "on-click-right": "spotifatius toggle-liked",
-        "on-click-middle": "playerctl -p spotify next",
-        "exec": "spotifatius monitor",
-    },*/
-
-    "network":{
-        "interface": "eno1",
-        // "format": "󰈀 {ifname} {ipaddr} {bandwidthDownBytes}",  
-        "format-ethernet": "󰈀 {ifname} down: {bandwidthDownBytes}  up: {bandwidthUpBytes}", 
-        "interval": 1,
+    "wlr/taskbar": {
+    	"format": "{icon}",
+    	"icon-size": 22,
+    	"icon-theme": "Tela-Dark",
+    	"tooltip": true,
+    	"tooltip-format": "{title} - {app-id}",
+    	"on-click": "activate",
+    	"on-click-middle": "close",
+      "ignore-list": [
+     	    "kitty"
+     	],
+    },
+    "niri/window": {
+        "tooltip-format": "{title} | {app_id}",
     },
     "niri/workspaces": {
         "on-click": "activate",
@@ -64,23 +66,42 @@
         "show-passive-items": true,
         "spacing": 10,
     },
+    
     "clock#simpleclock": {
         "tooltip": false,
         //"format": "  {:%H:%M}",
         "format": "  {:%H: %M}",
     },
+    
     "clock": {
         "format": "  {:L%a %d %b}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
     },
+    
     "cpu": {
         "format": "  {usage}%",
         "tooltip": true,
         "interval": 1,
-    },
+    }
+    ,
     "memory": {
         "format": "  {used:0.1f}G",
     },
+    
+    "network":{
+        "interface": "eno1",
+        // "format-ethernet": "󰈀 {ifname} down: {bandwidthDownBytes}  up: {bandwidthUpBytes}", 
+        "format-ethernet": "󰲝 : 󰁆 {bandwidthDownBytes}  󰁞 {bandwidthUpBytes}", 
+        "min-length": 27,
+        "interval": 1,
+    },
+
+    "disk":{
+        "path": "/",
+        "interval": 30,
+        "format": "  {used}/{total}",
+    },
+        
     "pulseaudio": {
         "format": "{icon} {volume}%",
         "format-muted": "  muted",
@@ -95,11 +116,13 @@
         },
         "on-click": "pavucontrol",
     },
+    
     "custom/logo": {
         "format": "󰣇",
         "tooltip": false,
-        "on-click": "rofi -show drun"
+        "on-click": "nwg-menu -fm 'nautilus' -cmd-logout 'niri msg action quit' -va 'top' --term 'kitty'" 
     },
+    
     "custom/sep": {
         "format": "|",
         "tooltip": false,
