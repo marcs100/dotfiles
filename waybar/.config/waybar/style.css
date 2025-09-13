@@ -102,6 +102,8 @@ window#waybar.empty #window {
 
 #custom-logo:hover {
   background-color: #006ea1;
+  transition-property: background-color;
+  transition-duration: .7s;
 }
 
 #custom-power {
@@ -113,6 +115,8 @@ window#waybar.empty #window {
 #custom-power:hover {
   color: #1c1c1c;
   background-color: #ae545e;
+  transition-property: background-color;
+  transition-duration: .7s;
 }
 
 #custom-lock {
@@ -124,6 +128,8 @@ window#waybar.empty #window {
 #custom-lock:hover {
   color: #262d29;
   background-color: #67cc95;
+  transition-property: background-color;
+  transition-duration: .7s;
 }
 
 @keyframes blink {
