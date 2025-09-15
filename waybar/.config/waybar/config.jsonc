@@ -31,14 +31,14 @@
     ],
     "wlr/taskbar": {
     	"format": "{icon}",
+      "tooltip": true,
+      "tooltip-format": "{title}",
     	"icon-size": 22,
     	"icon-theme": "Tela-Dark",
-    	"tooltip": true,
-    	"tooltip-format": "{title} - {app-id}",
     	"on-click": "activate",
     	"on-click-middle": "close",
       "ignore-list": [
-     	    "kitty"
+     	    "alacritty"
      	],
     },
     "niri/window": {
