@@ -8,9 +8,10 @@
     bg0:    #2E3440F2;
     bg1:    #3B4252;
     bg2:    #4C566A80;
-    bg3:    @accent;
+    bg3:    @accent2;
     fg0:    #D8DEE9;
-    fg1:    #ECEFF4;
+    /*fg1:    #ECEFF4;*/
+    fg1:    @fg;
     fg2:    #D8DEE9;
     fg3:    #4C566A;
 }
@@ -18,5 +19,5 @@
 @import "./template/marc-rounded-template.rasi"
 
 element selected {
-    text-color: @bg1;
+    text-color: @bg;
 }
