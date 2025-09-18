@@ -32,7 +32,7 @@
     "wlr/taskbar": {
     	"format": "{icon}",
       "tooltip": true,
-      "tooltip-format": "{title}",
+      "tooltip-format": "{title} | {app_id}",
     	"icon-size": 22,
     	"icon-theme": "Tela-Dark",
     	"on-click": "activate",
@@ -82,6 +82,7 @@
         "format": "  {usage}%",
         "tooltip": true,
         "interval": 1,
+        "min-length": 8,
     }
     ,
     "memory": {
@@ -99,7 +100,7 @@
     "disk":{
         "path": "/",
         "interval": 30,
-        "format": "  {used}/{total}",
+        "format": "  {used}({percentage_used}%)",
     },
         
     "pulseaudio": {

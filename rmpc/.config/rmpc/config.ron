@@ -98,14 +98,14 @@
             ".":       VolumeUp,
             "<Tab>":   NextTab,
             "<S-Tab>": PreviousTab,
-            "1":       SwitchToTab("Queue"),
-            "2":       SwitchToTab("Artists"),
-            //"4":       SwitchToTab("Album Artists"),
-            "3":       SwitchToTab("Albums"),
+            "1":       SwitchToTab("Artists"),
+            "2":       SwitchToTab("Albums"),
+            "3":       SwitchToTab("Queue"),
             "4":       SwitchToTab("Directories"),
-            "5":       SwitchToTab("Playlists"),
-            "6":       SwitchToTab("Search"),
-            "7":       SwitchToTab("Lyrics"),
+            "5":       SwitchToTab("Lyrics"),
+            "6":       SwitchToTab("Playlists"),
+            "7":       SwitchToTab("Search"),
+            "8":       SwitchToTab("Cava"),
             "q":       Quit,
             ">":       NextTrack,
             "p":       TogglePause,
@@ -187,6 +187,18 @@
     ),
     tabs: [
         (
+            name: "Artists",
+            pane: Pane(Artists),
+        ),
+        //(
+        //    name: "Album Artists",
+        //    pane: Pane(AlbumArtists),
+        //),
+        (
+            name: "Albums",
+            pane: Pane(Albums),
+        ),
+        (
             name: "Queue",
             pane: Split(
                 direction: Horizontal,
@@ -214,20 +226,12 @@
             ),
         ),
         (
-            name: "Artists",
-            pane: Pane(Artists),
-        ),
-        //(
-        //    name: "Album Artists",
-        //    pane: Pane(AlbumArtists),
-        //),
-        (
-            name: "Albums",
-            pane: Pane(Albums),
-        ),
-        (
             name: "Directories",
             pane: Pane(Directories),
+        ),
+        (
+            name: "Lyrics",
+            pane: Pane(Lyrics),      
         ),
         (
             name: "Playlists",
@@ -240,10 +244,6 @@
         (
             name: "Cava",
             pane: Pane(Cava),
-        ),
-        (
-            name: "Lyrics",
-            pane: Pane(Lyrics),      
         ),
     ],
 )

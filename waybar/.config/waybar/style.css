@@ -93,6 +93,10 @@ window#waybar.hidden {
   color: #585b70;
 }
 
+#taskbar.empty {
+  background: transparent;
+}
+
 window#waybar.empty #window {
   background-color: transparent;
 }
