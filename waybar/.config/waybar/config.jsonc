@@ -17,6 +17,7 @@
     ],
     "modules-center": [],
     "modules-right": [
+        "mpd",
         "network",
         "cpu",
         "memory",
@@ -29,6 +30,19 @@
         "custom/lock",
         "custom/power",
     ],
+    "mpd": {
+        // "format": "<span>{stateIcon} </span> ",
+        "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon} {artist}-{title}",
+        "format-disconnected": "<span color=\"#bf616a\"> </span> ",
+        // "format-stopped": "<span color=\"#bf616a\"> </span> ",
+        "format-stopped": "",
+        "tooltip": false,
+        "interval": 1,
+        "state-icons": {
+            "paused": "<span color=\"#d08770\"></span>",
+            "playing": "<span color=\"#a3be8c\"></span>",
+        }
+    },
     "wlr/taskbar": {
     	"format": "{icon}",
       "tooltip": true,
