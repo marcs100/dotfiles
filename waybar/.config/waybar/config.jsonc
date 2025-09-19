@@ -36,7 +36,8 @@
         "format-disconnected": "<span color=\"#bf616a\"> </span> ",
         // "format-stopped": "<span color=\"#bf616a\"> </span> ",
         "format-stopped": "",
-        "tooltip": false,
+        "tooltip": true,
+        "tooltip-format": "{filename}",
         "interval": 1,
         "state-icons": {
             "paused": "<span color=\"#d08770\"></span>",

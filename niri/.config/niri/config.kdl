@@ -317,7 +317,7 @@ spawn-at-startup "/usr/lib/polkit-kde-authentication-agent-1" "&" // Polkit
 
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
 // spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
-spawn-sh-at-startup "wyaybay -c ~/.config/waybar/config_DP2.jsonc"
+spawn-sh-at-startup "waybar -c ~/.config/waybar/config_DP2.jsonc"
 
 hotkey-overlay {
     // Uncomment this line to disable the "Important Hotkeys" pop-up at startup.
@@ -372,6 +372,7 @@ window-rule {
     match app-id=r#"firefox$"# title="^Picture-in-Picture$"
     match title=r#"Color Picker"#
     match title=r#"CachyOS Hello"#
+    match app-id=r#"foot$"#
     open-floating true
 }
 
@@ -381,6 +382,7 @@ window-rule {
     match app-id=r#"^org.chromium.Chromium$"#
     match app-id=r#"^brave-browser$"#
     match app-id=r#"^firefox$"#
+    match app-id=r#"kitty$"# title="^Helix - Minote Development$"
     default-column-width { proportion 0.9; }
 }
 
@@ -433,6 +435,7 @@ binds {
     Mod+S {spawn "rofi" "-show" "myscripts" "-modes" "myscripts:/home/marc/source/scripts/rofi-script-menu.sh";}
     Mod+y {spawn "kitty" "yazi";}
     Mod+g {spawn "nautilus";}
+    Mod+z {spawn "foot";}
 
     // Suggested binds for running programs: terminal, app launcher, screen locker.
     Mod+Return hotkey-overlay-title="Open a Terminal: kitty" { spawn "kitty"; }

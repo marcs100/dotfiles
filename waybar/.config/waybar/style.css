@@ -58,7 +58,6 @@ window#waybar.hidden {
 #custom-power,
 #custom-lock,
 #window,
-#taskbar,
 #tray,
 #cpu,
 #memory,
@@ -76,8 +75,18 @@ window#waybar.hidden {
   color: @fg;
   /* background-ccolor: #2a2826; */
   background-color: @bg;
-  opacity: 0.6;
+  opacity: 0.7;
 }
+
+#taskbar {
+  min-height: 0;
+  padding: 2px 10px;
+  border-radius: 6px;
+  margin: 4px 4px;
+  color: @fg;
+  background-color: @bg;
+}
+
 
 #custom-logo {
   min-height: 0;
