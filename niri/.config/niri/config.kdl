@@ -308,16 +308,12 @@ overview {
 spawn-at-startup "mako"
 spawn-at-startup "waybar"
 spawn-at-startup "/home/marc/source/scripts/set_wallpaper.sh"
-//spawn-at-startup "/home/marc/source/scripts/wake-server-auto"
-//spawn-at-startup "~/source/scripts/waybar-DP2.sh"
-//spawn-at-startup "nextcloud"
 spawn-at-startup "~/source/scripts/niri-lock.sh"
-//spawn-at-startup "swayidle" "-w" "timeout" "300" "niri msg action power-off-monitors" "timeout" "600" "swaylock -f" "before-sleep" "swaylock -f"
 spawn-at-startup "/usr/lib/polkit-kde-authentication-agent-1" "&" // Polkit
 
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
 // spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
-spawn-sh-at-startup "waybar -c ~/.config/waybar/config_DP2.jsonc"
+//spawn-sh-at-startup "waybar -c ~/.config/waybar/config_DP2.jsonc"
 
 hotkey-overlay {
     // Uncomment this line to disable the "Important Hotkeys" pop-up at startup.
