@@ -79,6 +79,8 @@ environment {
     QT_WAYLAND_DISABLE_WINDOWDECORATION "1"
     XDG_SESSION_TYPE "wayland"
     XDG_CURRENT_DESKTOP "niri"
+    QT_QPA_PLATFORMTHEME "qt5ct"
+    //QT_STYLE_OVERRIDE "kvantum"
 }
 
 xwayland-satellite {

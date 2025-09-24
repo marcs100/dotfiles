@@ -107,8 +107,10 @@
     "network":{
         "interface": "eno1",
         // "format-ethernet": "󰈀 {ifname} down: {bandwidthDownBytes}  up: {bandwidthUpBytes}", 
-        "format-ethernet": "󰲝 : 󰁆 {bandwidthDownBytes}  󰁞 {bandwidthUpBytes}", 
-        "min-length": 27,
+        // "format-ethernet": "󰲝 : 󰁆 {bandwidthDownBytes}  󰁞 {bandwidthUpBytes}", 
+        // "min-length": 27,
+        "format-ethernet": "󰲝 : 󰁆 {bandwidthDownBytes}", 
+        "min-length": 15,
         "interval": 1,
     },
 
