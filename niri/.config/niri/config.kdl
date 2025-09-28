@@ -160,6 +160,11 @@ layout {
         // fixed 1920
     }
 
+    preset-window-heights {
+        proportion 0.5
+        proportion 1.0
+    }
+
     // You can also customize the heights that "switch-preset-window-height" (Mod+Shift+R) toggles between.
     // preset-window-heights { }
 
@@ -309,6 +314,7 @@ overview {
 // This line starts waybar, a commonly used bar for Wayland compositors.
 spawn-at-startup "mako"
 spawn-at-startup "waybar"
+spawn-at-startup "crystal-dock"
 spawn-at-startup "/home/marc/source/scripts/set_wallpaper.sh"
 spawn-at-startup "~/source/scripts/niri-lock.sh"
 spawn-at-startup "/usr/lib/polkit-kde-authentication-agent-1" "&" // Polkit
@@ -371,6 +377,7 @@ window-rule {
     match title=r#"Color Picker"#
     match title=r#"CachyOS Hello"#
     match app-id=r#"foot$"#
+    match title=r#"galculator$"#
     open-floating true
 }
 

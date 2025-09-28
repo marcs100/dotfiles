@@ -6,7 +6,7 @@
   font-family: Lexend, "JetBrainsMono Nerd Font";
   /*font-family: Lexend, "monospace"; */
   font-size: 18px;
-  font-weight: 600;
+  font-weight: bold;
 }
 
 window#waybar {
@@ -55,6 +55,7 @@ window#waybar.hidden {
   opacity: 1;
 }
 
+/* #custom-cava, */
 #custom-power,
 #custom-lock,
 #window,

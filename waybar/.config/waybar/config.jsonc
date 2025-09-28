@@ -17,6 +17,7 @@
     ],
     "modules-center": [],
     "modules-right": [
+        // "custom/cava",
         "mpd",
         "network",
         "cpu",
@@ -98,6 +99,7 @@
         "tooltip": true,
         "interval": 1,
         "min-length": 8,
+        "on-click": "kitty btop",
     }
     ,
     "memory": {
@@ -157,4 +159,9 @@
         "on-click": "swaylock",
         "format": " ",
     },
+
+    // "custom/cava":{
+    //     "exec": "sleep 3 && cava",
+    //     "min-length": 30,
+    // }
 }
