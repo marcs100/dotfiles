@@ -441,6 +441,7 @@ binds {
     Mod+y {spawn "kitty" "yazi";}
     Mod+g {spawn "nautilus";}
     Mod+z {spawn "foot";}
+    Mod+m {spawn "kitty" "rmpc";}
 
     // Suggested binds for running programs: terminal, app launcher, screen locker.
     Mod+Return hotkey-overlay-title="Open a Terminal: kitty" { spawn "kitty"; }

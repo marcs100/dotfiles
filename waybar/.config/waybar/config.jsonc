@@ -1,4 +1,4 @@
-{
+[{
     "layer": "top",
     "output": "DP-1", //I only want output to my main monitor
     "position": "top",
@@ -150,7 +150,7 @@
 
     "custom/power": {
         "tooltip": false,
-        "on-click": "nwg-bar -p centre -i 64",
+        "on-click": "nwg-bar -p centre -i 256",
         "format": "⏻ ",
     },
 
@@ -164,4 +164,57 @@
     //     "exec": "sleep 3 && cava",
     //     "min-length": 30,
     // }
-}
+},
+{
+
+    "layer": "top",
+    "output": "DP-2", //I only want output to my main monitor
+    "position": "top",
+    "height": 40,
+    "spacing": 4,
+    "exclusive": true,
+    "gtk-layer-shell": true,
+    "passthrough": false,
+    "fixed-center": true,
+    "modules-left": [
+        "niri/workspaces",
+        //"niri/window"
+        "wlr/taskbar"
+    ],
+    "modules-center": [],
+    "modules-right": [
+        // "custom/cava",
+        "clock",
+        "clock#simpleclock",
+    ],
+    
+    "wlr/taskbar": {
+    	"format": "{icon}",
+      "tooltip": true,
+      "tooltip-format": "{title} | {app_id}",
+    	"icon-size": 22,
+    	"icon-theme": "Tela-Dark",
+    	"on-click": "activate",
+    	"on-click-middle": "close",
+      "ignore-list": [
+     	    "alacritty"
+     	],
+    },
+    "niri/window": {
+        "tooltip-format": "{title} | {app_id}",
+    },
+    "niri/workspaces": {
+        "on-click": "activate",
+        "format": "{value}"
+      },
+    "clock#simpleclock": {
+        "tooltip": false,
+        //"format": "  {:%H:%M}",
+        "format": "  {:%H: %M}",
+    },
+    
+    "clock": {
+        "format": "  {:L%a %d %b}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    },
+}]
