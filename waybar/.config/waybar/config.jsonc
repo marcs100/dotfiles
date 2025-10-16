@@ -138,7 +138,7 @@
     },
     
     "custom/logo": {
-        "format": "󰣇",
+        "format": " 󰣇 ",
         "tooltip": false,
         "on-click": "nwg-menu -fm 'nautilus' -cmd-logout 'niri msg action quit' -va 'top' --term 'kitty'" 
     },
