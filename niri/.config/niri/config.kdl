@@ -137,7 +137,7 @@ output "DP-2"{
 // https://yalter.github.io/niri/Configuration:-Layout
 layout {
     // Set gaps around windows in logical pixels.
-    gaps 12
+    gaps 5
 
     // When to center a column when changing focus, options are:
     // - "never", default behavior, focusing an off-screen column will keep at the left
@@ -314,7 +314,8 @@ overview {
 // This line starts waybar, a commonly used bar for Wayland compositors.
 spawn-at-startup "mako"
 spawn-at-startup "waybar"
-spawn-at-startup "crystal-dock"
+// spawn-at-startup "crystal-dock"
+spawn-at-startup "clipse" "-listen"
 spawn-at-startup "/home/marc/source/scripts/set_wallpaper.sh"
 spawn-at-startup "~/source/scripts/niri-lock.sh"
 spawn-at-startup "/usr/lib/polkit-kde-authentication-agent-1" "&" // Polkit
@@ -378,6 +379,7 @@ window-rule {
     match title=r#"CachyOS Hello"#
     match app-id=r#"foot$"#
     match title=r#"galculator$"#
+    match app-id=r#"clipse$"#
     open-floating true
 }
 
@@ -387,6 +389,7 @@ window-rule {
     match app-id=r#"^org.chromium.Chromium$"#
     match app-id=r#"^brave-browser$"#
     match app-id=r#"^firefox$"#
+    match app-id=r#"^Minote$"#
     match app-id=r#"kitty$"# title="^Helix - Minote Development$"
     default-column-width { proportion 0.9; }
 }
@@ -441,7 +444,8 @@ binds {
     Mod+y {spawn "kitty" "yazi";}
     Mod+g {spawn "nautilus";}
     Mod+z {spawn "foot";}
-    Mod+m {spawn "kitty" "rmpc";}
+    Mod+m {spawn "kitty" "-e" "rmpc";}
+    Mod+Shift+C {spawn "kitty" "--class" "clipse" "-e" "clipse";}
 
     // Suggested binds for running programs: terminal, app launcher, screen locker.
     Mod+Return hotkey-overlay-title="Open a Terminal: kitty" { spawn "kitty"; }

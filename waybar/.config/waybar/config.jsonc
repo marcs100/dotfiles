@@ -53,9 +53,9 @@
     	"icon-theme": "Tela-Dark",
     	"on-click": "activate",
     	"on-click-middle": "close",
-      "ignore-list": [
-     	    "alacritty"
-     	],
+      // "ignore-list": [
+     	//     "alacritty"
+     	// ],
     },
     "niri/window": {
         "tooltip-format": "{title} | {app_id}",
